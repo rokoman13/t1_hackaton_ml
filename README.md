@@ -15,7 +15,7 @@
 mkdir -p data
 
 # Поместите ваш CSV файл в папку data/
-# cp smart_support_vtb_belarus_faq_final-Copy1.csv data/
+сp smart_support_vtb_belarus_faq_final-Copy1.csv data/
 
 # Запустите приложение
 docker build -t support-ai .
