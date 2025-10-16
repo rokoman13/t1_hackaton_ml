@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  support-ai:
+    build: .
+    ports:
+      - "8222:8222"  # Backend API
+      - "8501:8501"  # Frontend Streamlit
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
