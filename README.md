@@ -18,4 +18,6 @@ mkdir -p data
 # cp smart_support_vtb_belarus_faq_final-Copy1.csv data/
 
 # Запустите приложение
-docker-compose up -d
+docker build -t support-ai .
+
+docker run -it -p 8222:8222 -p 8501:8501 -v $(pwd)/data:/app/data support-ai
